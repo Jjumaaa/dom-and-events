@@ -11,8 +11,8 @@ course_list.forEach((topic) => {
     ul.innerHTML += li; 
 });
 
-let div = document.createElement("div"); // Create a new div element
-div.setAttribute("id", "content"); // Set the id attribute
+let div = document.createElement("div");
+div.setAttribute("id", "content");
 div.style.height = "150px"
 div.style.width = "150px"
 div.style.backgroundColor = "blue"
