@@ -45,4 +45,10 @@ form.addEventListener('submit', function(event) {
     message.innerText = `Hello ${username}`;
     // alert (`Hello ${username}`);
 
+
+    const button= document.getElementById('button');
+    button.addEventListener("click", function(){
+        alert(" i was clicked")
+    })
+
 });
