@@ -19,3 +19,30 @@ div.style.backgroundColor = "blue"
 document.body.appendChild(div); 
 
 div.addEventListener("click", (event) => {div.style.backgroundColor = "black";});
+
+// console.log(username);
+// alert(username);
+
+// function greetings ()(
+// let username = document.getElementById('username').value
+// alert(`Hello $()username)`)
+// )
+
+// greetings()
+
+let form =document.getElementById('form')
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    //console.log(event);
+
+    let username = document.getElementById('username').value;
+    console.log(username);
+    let message = document.getElementById("message");
+    message.setAttribute("class", "message");
+    message.style.backgroundColor = "black";
+    message.style.color = "white";
+    message.innerText = `Hello ${username}`;
+    // alert (`Hello ${username}`);
+
+});
